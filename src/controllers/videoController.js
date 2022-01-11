@@ -1,4 +1,5 @@
-export const trending = (req,res) => res.send("trending");
+export const trending = (req,res) => res.render("home");
+//send 대신 render을 사용
 export const see = (req,res) => {
     console.log(req.params);
     return res.send("watch");
